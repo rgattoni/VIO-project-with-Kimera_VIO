@@ -5,7 +5,7 @@ Implement a VIO algorithm for Crazyflie
 lists of software and hardaware to execute the application
 
 # Repository Structure
-overview dei file di progetto e la loro organizzazione
+provide an overview of project's folder and file organization
 
 # Demo Instructions
 include all commands to reproduce the demo
