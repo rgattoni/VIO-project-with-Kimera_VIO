@@ -3,8 +3,10 @@ Implement a VIO algorithm for Crazyflie
 
 # Installation Requirements
 Lists of software and hardaware to execute the application:
-Tested on Ubuntu 24.04 LTS.\n
-1.Prerequisites:
+Tested on Ubuntu 24.04 LTS.
+## Prerequisites:
+*cflib
+*cfclient
   
 
 
