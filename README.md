@@ -17,7 +17,7 @@ The necessary "Crazyflie" software is installed within a virtual environment to 
  
      `$ pip3 install cflib`
 
-It is also necessary to install the driver for "Crazyradio 2.0" and here are the instructions [https://www.bitcraze.io/documentation/repository/crazyradio-firmware/master/building/usbwindows/] (URL)
+It is also necessary to install the driver for "Crazyradio 2.0" and here are the instructions [https://www.bitcraze.io/documentation/repository/crazyradio-firmware/master/building/usbwindows/](URL)
   
 
 
