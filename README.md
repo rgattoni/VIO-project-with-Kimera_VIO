@@ -21,7 +21,6 @@ It is also necessary to install the driver for "Crazyradio 2.0" and here are the
 Crazyradio allows data communication between the drone and the client by running `$ cfclient` from the terminal. Then It's possible to see the output in the relative path `~/.config/cfclient/logdata/datetime_del_file`. This output file can be saved by setting the relevant "Logging configuration" within cfclient and then inserting it into the "Log block". 
 
 
-
 # Repository Structure
 provide an overview of project's folder and file organization
 
