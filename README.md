@@ -2,7 +2,8 @@
 Implement a VIO algorithm for Crazyflie
 
 # Installation Requirements
-lists of software and hardaware to execute the application
+Lists of software and hardaware to execute the application:
+Ubuntu 24.04 LTS 
 
 # Repository Structure
 provide an overview of project's folder and file organization
