@@ -9,13 +9,13 @@ Tested on Ubuntu 24.04 LTS.
 * cfclient
 The necessary Crazyflie software is installed within a virtual environment to avoid conflicts with the system's Python and pip. Following commands to execute a virtual env inside the project file:
 
-`$ python3 -m venv cfclient-env
+` $ python3 -m venv cfclient-env
 
- $ source cfclient-env/bin/activate
+  $ source cfclient-env/bin/activate
  
- $ pip3 install cfclient
+  $ pip3 install cfclient
  
- $ pip3 install cflib`
+  $ pip3 install cflib `
 
   
 
