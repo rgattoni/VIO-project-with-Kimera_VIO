@@ -20,6 +20,9 @@ The necessary "Crazyflie" software is installed within a virtual environment to 
 It is also necessary to install the driver for "Crazyradio 2.0" and here are the instructions [https://www.bitcraze.io/documentation/repository/crazyradio-firmware/master/building/usbwindows/](URL)
 Crazyradio allows data communication between the drone and the client by running `$ cfclient` from the terminal. Then It's possible to see the output in the relative path `~/.config/cfclient/logdata/datetime_del_file`. This output file can be saved by setting the relevant "Logging configuration" within cfclient and then inserting it into the "Log block". 
 
+*Kimera-VIO
+
+
 
 # Repository Structure
 provide an overview of project's folder and file organization
@@ -60,11 +63,18 @@ The only way to run Kimera_VIO is to collect data in a precise path according to
 
      `$ mkdir state_groundtruth_estimate0`
 
-At this point You can insert inside imu0 a file called data.csv with the data collect through cfclient while inside cam0 and cam1 You have to insert a folder called data with all images collect from the monocamera and anothe file called data.csv with two columns: "timestamp, timestamp.png" . It is also necessary to add to all this folder a new file called sensor.yaml. 
+At this point You can insert inside imu0 a file called data.csv with the data collect through cfclient while inside cam0 and cam1 You have to insert a folder called data with all images collect from the monocamera and anothe file called data.csv with two columns: "timestamp, timestamp.png" . It is also necessary to add to all this folder a new file called sensor.yaml. All the data is now in the correct path, as defined by kimera_vio. Next step is to run algorithm but before we have to put inside the docker container:
+
+     `$ sudo ./scripts/docker/kimera_vio_docker.bash`
+
+Inside the container It is possible to run Kimera-VIO:
+
+     `$ cd Kimera-VIO`
      
+     `$ bash ./scripts/stereoVIOEuroc.bash -p "PATH_TO_DATASET/V1_01_easy"`
 
 # Contributions
-specify each member's contributions
+We: Riccardo Gattoni and Tommaso Furlani, work together step by step to realize this project.
 
 # Credits
-what we used to realize the project like papers or what else
+We use the official repositery of Kimera-VIO, and the site of Bitcraze, in particular the paragraph relative to AI-Deck and Crazyflie.
