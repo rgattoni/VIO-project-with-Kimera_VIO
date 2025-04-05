@@ -59,6 +59,8 @@ The only way to run Kimera_VIO is to collect data in a precise path according to
      `$ mkdir cam1`
 
      `$ mkdir state_groundtruth_estimate0`
+
+At this point You can insert inside imu0 a file called data.csv with the data collect through cfclient while inside cam0 and cam1 You have to insert a folder called data with all images collect from the monocamera and anothe file called data.csv with two columns: "timestamp, timestamp.png" . It is also necessary to add to all this folder a new file called sensor.yaml. 
      
 
 # Contributions
