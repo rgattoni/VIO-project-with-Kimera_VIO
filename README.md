@@ -29,7 +29,11 @@ include all commands to reproduce the demo
 The first step to do is to collect data using respectively "Crazyradio" and Wifi of AI_deck. So connect via USB the "Crazyradio" to the PC and then turn on "Crazyflie". Now You should open a terminal and execute `$ cfclient`, insert the correct address, click connect and then select "save" and "write to file" the correct configuratiuon inside "Log block". In parallel with this, open another terminal and execute inside a virtual environment the following commands
 
      `$ cd aideck-gap8-examples/examples/other/wifi-img-streamer`
+     
      `$ python3 opencv-viewer.py --save /path_dove_salvare_le immagini`
+
+Now It is possible to get back the file.csv inside this path `~/.config/cfclient/logdata/datetime_del_file` and the file containing the images of the monocamera in `/aideck-gap8-examples/examples/other/stream_out`. 
+
      
 
 # Contributions
