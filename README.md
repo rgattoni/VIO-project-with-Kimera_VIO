@@ -34,6 +34,31 @@ The first step to do is to collect data using respectively "Crazyradio" and Wifi
 
 Now It is possible to get back the file.csv inside this path `~/.config/cfclient/logdata/datetime_del_file` and the file containing the images of the monocamera in `/aideck-gap8-examples/examples/other/stream_out`. 
 
+The only way to run Kimera_VIO is to collect data in a precise path according to a specific order scheme. So folowing this commands in the work directory:
+
+     `$ mkdir dataset`
+     
+     `$ cd dataset`
+     
+     `$ mkdir euroc`
+     
+     `$ cd euroc`
+
+     `$ mkdir V1_01_easy`
+
+     `$ cd V1_01_easy`
+
+     `$ mkdir mav0`
+
+     `$ cd mav0`
+
+     `$ mkdir imu0`
+
+     `$ mkdir cam0`
+
+     `$ mkdir cam1`
+
+     `$ mkdir state_groundtruth_estimate0`
      
 
 # Contributions
