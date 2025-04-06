@@ -85,7 +85,7 @@ Inside the container It is possible to run Kimera-VIO:
      
      $ bash ./scripts/stereoVIOEuroc.bash -p "PATH_TO_DATASET/V1_01_easy"
 
-This will show you the plot of trajectory anche the "Features trac" window.
+This will show you the plot of trajectory anche the "Features tracs" window. Another important thing to remember is to model the volume of the container by adding this line of code in "kimera_vio_docker.bash": `--volume="/data/datasets/Euroc:/data/datasets/Euroc" \`
 
 # Contributions
 We: Riccardo Gattoni and Tommaso Furlani, work together step by step to realize this project.
