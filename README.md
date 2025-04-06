@@ -85,7 +85,7 @@ Inside the container It is possible to run Kimera-VIO:
      
      $ bash ./scripts/stereoVIOEuroc.bash -p "PATH_TO_DATASET/V1_01_easy"
 
-This will show you the plot of trajectory anche the "Features tracs" window. Another important thing to remember is to model the volume of the container by adding this line of code in "kimera_vio_docker.bash": `--volume="/data/datasets/Euroc:/data/datasets/Euroc" \`
+This will show you the plot of trajectory anche the "Features tracs" window. Another important thing to remember is to model the volume of the container by adding this line of code in "kimera_vio_docker.bash": `--volume="/data/datasets/Euroc:/data/datasets/Euroc" \`. In particular, the path where We have modified some lines of code outside the container is the first one before the colon while the second one indicates the path where You can find the same file but inside the container. In this Project We needed to modify this file beacuse We have to change in "/Kimera-VIO/params/EurocMono/LeftCameraParams.yaml" the resolution of image. We do that beacuse the monocamera of AI-Deck have (244,324) of resolution. 
 
 # Contributions
 We: Riccardo Gattoni and Tommaso Furlani, work together step by step to realize this project.
