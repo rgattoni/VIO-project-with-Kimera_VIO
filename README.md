@@ -20,7 +20,7 @@ The necessary "Crazyflie" software is installed within a virtual environment to 
 It is also necessary to install the driver for "Crazyradio 2.0" and here are the instructions [https://www.bitcraze.io/documentation/repository/crazyradio-firmware/master/building/usbwindows/](URL)
 Crazyradio allows data communication between the drone and the client by running `$ cfclient` from the terminal. Then It's possible to see the output in the relative path `~/.config/cfclient/logdata/datetime_del_file`. This output file can be saved by setting the relevant "Logging configuration" within cfclient and then inserting it into the "Log block". 
 
-*Kimera-VIO
+* Kimera-VIO
 
 
 
@@ -72,6 +72,8 @@ Inside the container It is possible to run Kimera-VIO:
      `$ cd Kimera-VIO`
      
      `$ bash ./scripts/stereoVIOEuroc.bash -p "PATH_TO_DATASET/V1_01_easy"`
+
+This will show you the plot of trajectory anche the "Features trac" window.
 
 # Contributions
 We: Riccardo Gattoni and Tommaso Furlani, work together step by step to realize this project.
