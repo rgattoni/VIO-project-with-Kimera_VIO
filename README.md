@@ -9,7 +9,7 @@ Tested on Ubuntu 24.04 LTS.
 * cfclient
 The necessary "Crazyflie" software is installed within a virtual environment to avoid conflicts with the system's Python and pip. Following commands to execute a virtual env inside the project file:
 
-     `$ python3 -m venv cfclient-env`
+     $ python3 -m venv cfclient-env
 
      `$ source cfclient-env/bin/activate`
  
@@ -51,7 +51,7 @@ Now It is possible to get back the file.csv inside this path `~/.config/cfclient
 
 The only way to run Kimera_VIO is to collect data in a precise path according to a specific order scheme. So folowing this commands in the work directory:
 
-     `$ mkdir dataset`
+     $ mkdir dataset
      
      `$ cd dataset`
      
