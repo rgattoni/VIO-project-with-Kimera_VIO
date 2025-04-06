@@ -21,7 +21,19 @@ It is also necessary to install the driver for "Crazyradio 2.0" and here are the
 Crazyradio allows data communication between the drone and the client by running `$ cfclient` from the terminal. Then It's possible to see the output in the relative path `~/.config/cfclient/logdata/datetime_del_file`. This output file can be saved by setting the relevant "Logging configuration" within cfclient and then inserting it into the "Log block". 
 
 * Kimera-VIO
+Now We report the list of commands to install the algorithm and to have it avaiable to usage:
 
+    `$ git clone git@github.com:MIT-SPARK/Kimera-VIO.git`
+
+    `$ cd Kimera-VIO`
+
+Before execute the following commnand It is necessary to apply more than 6Gb of RAM inside the virtual machine.
+
+    `$ sudo docker build --rm -t kimera_vio -f ./scripts/docker/Dockerfile .`
+
+After that It's possible to run the docker container with the correct set-up of the main algorithm and You can do this with the command:
+
+     `$ sudo ./scripts/docker/kimera_vio_docker.bash`
 
 
 # Repository Structure
