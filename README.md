@@ -23,7 +23,7 @@ Crazyradio allows data communication between the drone and the client by running
 * Kimera-VIO
 Now We report the list of commands to install the algorithm and to have it avaiable to usage:
 
-    $ git clone git@github.com:MIT-SPARK/Kimera-VIO.git
+    $ git clone git@github.com:MIT-SPARK/Kimera-VIO.git Kimera-VIO
 
     $ cd Kimera-VIO
 
