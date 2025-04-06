@@ -25,10 +25,10 @@ Crazyradio allows data communication between the drone and the client by running
 
 
 # Repository Structure
-provide an overview of project's folder and file organization
+Provide an overview of project's folder and file organization
 
 # Demo Instructions
-include all commands to reproduce the demo
+Include all commands to reproduce the demo
 The first step to do is to collect data using respectively "Crazyradio" and Wifi of AI_deck. So connect via USB the "Crazyradio" to the PC and then turn on "Crazyflie". Now You should open a terminal and execute `$ cfclient`, insert the correct address, click connect and then select "save" and "write to file" the correct configuratiuon inside "Log block". In parallel with this, open another terminal and execute inside a virtual environment the following commands
 
      `$ cd aideck-gap8-examples/examples/other/wifi-img-streamer`
