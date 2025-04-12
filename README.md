@@ -37,7 +37,7 @@ After that It's possible to run the docker container with the correct set-up of 
 
 
 # Repository Structure
-Provide an overview of project's folder and file organization
+The most important files are present in dataset path because It contains how to organize datapath and data to run Kimera_VIO. We are also reported some scripts that are necessary to allow the sincronization between data from camera and imu. 
 
 # Demo Instructions
 Include all commands to reproduce the demo
