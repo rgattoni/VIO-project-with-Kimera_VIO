@@ -41,15 +41,15 @@ The most important files are present in dataset path because It contains how to 
 
 # Demo Instructions
 Include all commands to reproduce the demo
-The first step to do is to collect data using respectively "Crazyradio" and Wifi of AI_deck. So connect via USB the "Crazyradio" to the PC and then turn on "Crazyflie". Now You should open a terminal and execute `$ cfclient`, insert the correct address, click connect and then select "save" and "write to file" the correct configuratiuon inside "Log block". In parallel with this, open another terminal and execute inside a virtual environment the following commands
+The first step to do is to collect data using respectively "Crazyradio" and Wifi of AI_deck. Secondly, connect via USB the "Crazyradio" to the PC and turn on "Crazyflie". Open a terminal and execute `$ cfclient`, insert the correct address, click connect and then select "save" and "write to file"  on the right configuration inside "Log block". Meanwhile, open another terminal and execute inside a virtual environment the following commands:
 
      $ cd aideck-gap8-examples/examples/other/wifi-img-streamer
      
      $ python3 opencv-viewer.py --save /path_dove_salvare_le immagini
 
-Now It is possible to get back the file.csv inside this path `~/.config/cfclient/logdata/datetime_del_file` and the file containing the images of the monocamera in `/aideck-gap8-examples/examples/other/stream_out`. 
+It is now possible to get again the file.csv inside the path `~/.config/cfclient/logdata/datetime_del_file` and the file containing the images of the monocamera in `/aideck-gap8-examples/examples/other/stream_out`. 
 
-The only way to run Kimera_VIO is to collect data in a precise path according to a specific order scheme. So folowing this commands in the work directory:
+The only way to run Kimera_VIO is to collect data in a precise path according to a specific order scheme. So following this commands in the work directory:
 
      $ mkdir dataset
      
@@ -75,20 +75,20 @@ The only way to run Kimera_VIO is to collect data in a precise path according to
 
      $ mkdir state_groundtruth_estimate0
 
-At this point You can insert inside imu0 a file called data.csv with the data collect through cfclient while inside cam0 and cam1 You have to insert a folder called data with all images collect from the monocamera and anothe file called data.csv with two columns: "timestamp, timestamp.png" . It is also necessary to add to all this folder a new file called sensor.yaml. All the data is now in the correct path, as defined by kimera_vio. Next step is to run algorithm but before we have to put inside the docker container:
+At this point, you can insert inside imu0 a file called data.csv with the data collected through cfclient. Moreover, inside cam0 and cam1 you have to insert a folder called data with all the images collected from the monocamera and a second file called data.csv with two columns: "timestamp, timestamp.png" . It is also necessary to add a new file, named sensor.yaml, to these folders. All data is now placed in the correct path, as defined by kimera_vio. The next step is running the algorithm but first we need to put the dataset in the docker container:
 
       $ sudo ./scripts/docker/kimera_vio_docker.bash
 
-Inside the container It is possible to run Kimera-VIO:
+Inside the container it's possible to run Kimera-VIO:
 
      $ cd Kimera-VIO
      
      $ bash ./scripts/stereoVIOEuroc.bash -p "PATH_TO_DATASET/V1_01_easy"
 
-This will show you the plot of trajectory anche the "Features tracs" window. Another important thing to remember is to model the volume of the container by adding this line of code in "kimera_vio_docker.bash": `--volume="/data/datasets/Euroc:/data/datasets/Euroc" \`. In particular, the path where We have modified some lines of code outside the container is the first one before the colon while the second one indicates the path where You can find the same file but inside the container. In this Project We needed to modify this file beacuse We have to change in "/Kimera-VIO/params/EurocMono/LeftCameraParams.yaml" the resolution of image. We do that beacuse the monocamera of AI-Deck have (244,324) of resolution. 
+This will show the trajectory and the "Features tracks" window. Finally, it's important to model the volume of the container by adding this line of code in "kimera_vio_docker.bash": `--volume="/data/datasets/Euroc:/data/datasets/Euroc" \`. In particular, the path outside the container, where we have modified some code's lines, is the first one before colon (:). On the other hand, the second one indicates the path where you can find the same file but inside the container. In this project it is necessay to change this file in order to modify the image resolution in "/Kimera-VIO/params/EurocMono/LeftCameraParams.yaml", because the monocamera of AI-Deck has (244,324) as resolution. 
 
 # Contributions
-We: Riccardo Gattoni and Tommaso Furlani, work together step by step to realize this project.
+We: Riccardo Gattoni and Tommaso Furlani, worked together step by step to realize this project.
 
 # Credits
-We use the official repositery of Kimera-VIO, and the site of Bitcraze, in particular the paragraph relative to AI-Deck and Crazyflie.
+We use the official repository of Kimera-VIO, and Bitcraze website, in particular the paragraph relating to AI-Deck and Crazyflie.
