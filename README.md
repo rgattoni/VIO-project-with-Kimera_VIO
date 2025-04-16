@@ -1,5 +1,5 @@
 # VIO-project-with-Kimera_VIO
-Implement a VIO algorithm for Crazyflie.
+Implement a VIO algorithm for Crazyflie: the project idea is to collect data from the IMU sensors of the Crazyflie drone and gather a sequence of frames from the stream of the AI-deck's monocular camera. Then, the goal is to synchronize these two types of data and organize them into a precise dataset to feed them into the Kimera-vio algorithm so that it can plot the trajectory.
 
 # Installation Requirements
 Lists of software and hardaware to execute the application:
