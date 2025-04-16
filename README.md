@@ -75,4 +75,4 @@ This will show the trajectory and the "Features tracks" window. Finally, it's im
 We: Riccardo Gattoni and Tommaso Furlani, worked together step by step to realize this project.
 
 # Credits
-We use the official repository of Kimera-VIO, and Bitcraze website, in particular the paragraph relating to AI-Deck and Crazyflie.
+We use the official repository of Kimera-VIO in https://github.com/MIT-SPARK/Kimera-VIO, and Bitcraze website, in particular the paragraph relating to AI-Deck and Crazyflie.
