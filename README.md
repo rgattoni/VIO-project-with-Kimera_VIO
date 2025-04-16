@@ -1,5 +1,5 @@
 # VIO-project-with-Kimera_VIO
-Implement a VIO algorithm for Crazyflie
+Implement a VIO algorithm for Crazyflie.
 
 # Installation Requirements
 Lists of software and hardaware to execute the application:
